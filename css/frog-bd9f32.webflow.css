@@ -4,7 +4,7 @@
 }
 
 .background {
-  background-image: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url('../images/sleep3.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url('../images/Gangyeah.jpeg');
   background-position: 0 0, 50% 0;
   background-size: auto, cover;
   position: fixed;
