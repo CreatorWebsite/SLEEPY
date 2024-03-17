@@ -1,0 +1,508 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url('../images/sleep3.webp');
+  background-position: 0 0, 50% 0;
+  background-size: auto, cover;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.background-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url('../images/sleep1.webp');
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.body {
+  background-color: #000;
+}
+
+.cursor-wrapper {
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #2600ff;
+  border-radius: 100%;
+}
+
+.main-content {
+  z-index: 1;
+  height: 100svh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.navbar {
+  max-width: 1600px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.nav-link {
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.logo-h {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Oswald, sans-serif;
+}
+
+.main-heading {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.heading {
+  color: #fff;
+  text-align: center;
+  letter-spacing: -10px;
+  margin: 0 -10px;
+  font-family: Oswald, sans-serif;
+  font-size: 200px;
+  line-height: 100%;
+}
+
+.exe-about {
+  z-index: 50;
+  width: 600px;
+  height: 350px;
+  max-width: 600px;
+  background-color: #1d1d1d;
+  border: 1px solid #747474;
+  border-radius: 8px;
+  display: block;
+  position: fixed;
+  top: 40%;
+  left: 48%;
+  overflow: hidden;
+}
+
+.exe-about-header {
+  background-color: #000;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+}
+
+.x {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.x-line {
+  height: 1px;
+  background-color: #fff;
+  transform: translate(0, 1px)rotate(-45deg);
+}
+
+.exe-heading {
+  color: #fff;
+  font-family: Inconsolata, monospace;
+}
+
+.x-line-2 {
+  height: 1px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.exe-content {
+  width: 100%;
+  padding: 20px;
+}
+
+.exe-text {
+  color: #a7a7a7;
+  font-family: Inconsolata, monospace;
+}
+
+.footer {
+  max-width: 1600px;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.footer-link {
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.exe-tokenomics {
+  z-index: 51;
+  width: 600px;
+  height: 350px;
+  max-width: 600px;
+  background-color: #1d1d1d;
+  border: 1px solid #747474;
+  border-radius: 8px;
+  display: none;
+  position: fixed;
+  top: 4%;
+  left: 4%;
+  overflow: hidden;
+}
+
+.exe-tokenomics-header {
+  background-color: #000;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+}
+
+.exe-faq {
+  z-index: 49;
+  width: 600px;
+  height: 350px;
+  max-width: 600px;
+  background-color: #1d1d1d;
+  border: 1px solid #747474;
+  border-radius: 8px;
+  display: none;
+  position: fixed;
+  top: 3%;
+  left: 21%;
+  overflow: hidden;
+}
+
+.exe-faq-header {
+  background-color: #000;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+}
+
+.exe-how {
+  z-index: 50;
+  width: 600px;
+  height: 350px;
+  max-width: 600px;
+  background-color: #1d1d1d;
+  border: 1px solid #747474;
+  border-radius: 8px;
+  display: none;
+  position: fixed;
+  top: 35%;
+  left: 3%;
+  overflow: hidden;
+}
+
+.exe-how-header {
+  background-color: #000;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+}
+
+.image, .image-2, .image-3, .image-4 {
+  margin-top: 20px;
+}
+
+.exe-pepe-1 {
+  z-index: 50;
+  width: 300px;
+  height: 200px;
+  max-width: 600px;
+  background-color: #1d1d1d;
+  border: 1px solid #747474;
+  border-radius: 8px;
+  display: block;
+  position: fixed;
+  top: 17%;
+  left: 8%;
+  overflow: hidden;
+}
+
+.exe-pepe-1-header {
+  background-color: #000;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+}
+
+.exe-spam {
+  z-index: 50;
+  width: 200px;
+  height: 200px;
+  max-width: 600px;
+  background-color: #1d1d1d;
+  border: 1px solid #747474;
+  border-radius: 8px;
+  display: block;
+  position: fixed;
+  top: 13%;
+  left: 70%;
+  overflow: hidden;
+}
+
+.exe-spam-header {
+  background-color: #000;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .logo-h {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .exe-about {
+    width: 400px;
+    height: 300px;
+  }
+
+  .exe-tokenomics {
+    width: 350px;
+    height: 300px;
+    display: none;
+    left: 14%;
+  }
+
+  .exe-faq, .exe-how {
+    width: 400px;
+    height: 300px;
+    display: none;
+  }
+
+  .exe-pepe-1 {
+    width: 400px;
+    height: 300px;
+  }
+
+  .exe-spam {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .exe-about {
+    width: 300px;
+    height: 200px;
+    top: 56%;
+    left: 45%;
+  }
+
+  .exe-content {
+    padding: 10px;
+  }
+
+  .exe-text {
+    font-size: 10px;
+    line-height: 100%;
+  }
+
+  .exe-tokenomics {
+    height: 200px;
+    display: none;
+  }
+
+  .exe-faq, .exe-how {
+    width: 300px;
+    height: 200px;
+    display: none;
+  }
+
+  .image {
+    width: 50px;
+  }
+
+  .exe-pepe-1 {
+    width: 300px;
+    height: 200px;
+    left: 5%;
+  }
+
+  .exe-spam {
+    width: 200px;
+    height: 200px;
+    left: 63%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .links {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .nav-link {
+    text-align: right;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 10px;
+    line-height: 100%;
+  }
+
+  .logo-h {
+    font-size: 30px;
+  }
+
+  .heading {
+    letter-spacing: -5px;
+    font-size: 100px;
+  }
+
+  .exe-about {
+    width: 300px;
+    height: 200px;
+    top: 67%;
+    left: 21%;
+  }
+
+  .exe-about-header, .exe-content {
+    padding: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+  }
+
+  .footer-link {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 10px;
+    line-height: 100%;
+  }
+
+  .exe-tokenomics {
+    width: 300px;
+    height: 200px;
+    display: none;
+    top: 38%;
+  }
+
+  .exe-tokenomics-header {
+    padding: 10px;
+  }
+
+  .exe-faq {
+    width: 250px;
+    height: 200px;
+    display: none;
+  }
+
+  .exe-faq-header {
+    padding: 10px;
+  }
+
+  .exe-how {
+    width: 300px;
+    height: 200px;
+    display: none;
+  }
+
+  .exe-how-header {
+    padding: 10px;
+  }
+
+  .image {
+    width: 40px;
+    margin-top: 10px;
+  }
+
+  .exe-pepe-1 {
+    width: 250px;
+    height: 150px;
+    top: 13%;
+    left: 2%;
+  }
+
+  .exe-pepe-1-header {
+    padding: 10px;
+  }
+
+  .image-5 {
+    width: 80px;
+  }
+
+  .exe-spam {
+    width: 150px;
+    height: 150px;
+    top: 20%;
+    left: 49%;
+  }
+
+  .exe-spam-header {
+    padding: 10px;
+  }
+}
